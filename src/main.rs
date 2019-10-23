@@ -10,6 +10,7 @@ fn main() {
 
     if words.len() == 0 {
         eprintln!("No words provided!");
+        println!("Put scrambled text as arguments and input dictionary as text input");
         std::process::exit(1);
     }
 

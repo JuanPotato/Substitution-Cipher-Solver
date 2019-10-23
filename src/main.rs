@@ -4,9 +4,7 @@ use std::env;
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    let word_pattern = args[1..].join(" ");
-
-    let mut words: Vec<String> = word_pattern.split_whitespace().map(|s| s.to_string()).collect();
+    let mut words: Vec<String> = args[1..].iter().map(|s| s.to_string()).collect();
 
     if words.len() == 0 {
         eprintln!("No words provided!");

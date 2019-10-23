@@ -46,7 +46,7 @@ fn main() {
                         word_matches[i].push(line.clone());
                     }
                 }
-                
+
                 line.clear();
 
             }
@@ -89,7 +89,7 @@ fn main() {
 fn make_word_map(word: &str) -> Vec<Vec<usize>> {
     let mut word_map: Vec<Vec<usize>> = Vec::with_capacity(26);
     let mut char_order = Vec::with_capacity(26);
-    
+
     'outer: for (i, c) in word.char_indices() {
         for (ordered_index, ordered_char) in char_order.iter().enumerate() {
             if c == *ordered_char {
@@ -102,6 +102,6 @@ fn make_word_map(word: &str) -> Vec<Vec<usize>> {
         word_map.push(Vec::with_capacity(8));
         word_map.last_mut().unwrap().push(i);
     }
-    
+
     return word_map;
 }

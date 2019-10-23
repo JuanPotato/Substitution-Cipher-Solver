@@ -1,13 +1,10 @@
 [package]
-name = "tan_ctf"
+name = "substitution_cipher_solver"
 version = "0.1.0"
-authors = ["Hasan Ibraheem <JuanPotato@users.noreply.github.com>"]
+authors = ["Hasan Ibraheem <hasantiny@gmail.com>"]
 edition = "2018"
 
 [profile.release]
 debug = true
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-linereader = "0.3.0"

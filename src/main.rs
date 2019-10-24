@@ -1,5 +1,5 @@
-use std::io::BufRead;
 use std::env;
+use std::io::BufRead;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -48,9 +48,10 @@ fn main() {
                 }
 
                 line.clear();
-
             }
-            Err(_error) => { panic!("something went wrong"); }
+            Err(_error) => {
+                panic!("something went wrong");
+            }
         }
     }
 
